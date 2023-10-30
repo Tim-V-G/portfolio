@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c204bc659b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section id="home">
+    <div id="header">
+        <li class="nav-item nav-menu" onclick="openNav()"><i class="fa-solid fa-bars fa-2x" style="color: #e75a2f;"></i></li>
+        <div id="navmenu">
+            <li class="nav-item nav-menuItem"><a class="translatable" data-key="navHome" href="#home">Home</a></li>
+            <li class="nav-item nav-menuItem"><a class="translatable" data-key="navAbout" href="#aboutMe">About Me</a></li>
+            <li class="nav-item nav-menuItem"><a class="translatable" data-key="navSkills" href="#skills">Skills</a></li>
+            <li class="nav-item nav-menuItem"><a class="translatable" data-key="navProjects" href="#projects">Projects</a></li>
+            <li class="nav-item nav-menuItem"><a class="translatable" data-key="navContact" href="#contact">Contact</a></li>
+        </div>
+        <select id="language-selector">
+            <option value="en">EN</option>
+            <option value="nl">NL</option>
+        </select>
+    </div>
+    <div id="introduction">
+        <div id="in-text">
+            <h1 class="welcome-msg translatable" data-key="welcomeMsg">Hello, <br>my name is <span class="in-name">Tim</span></h1>
+            <div id="in-buttons">
+                <button class="btn-resume translatable" data-key="btnResume">Resume</button>
+                <a href="#contact"><button class="btn-contact translatable" data-key="btnContact">Contact</button></a>
+            </div>
+        </div>
+        <div id="in-img">
+            <img src="img/me.png">
+        </div>
+    </div>
+</section>
+<section id="aboutMe">
+    <div id="ab-img">
+        <img src="img/me2.png">
+    </div>
+    <div id="ab-text">
+        <div id="ab-inner">
+            <h2 id="ab-head" class="translatable" data-key="aboutMeHead">About Me</h2>
+            <div id="ab-line"></div>
+            <h3 class="translatable" data-key="aboutMeFunction">Tim van Gestel - Front End Developer</h3>
+            <p class="translatable" data-key="aboutMePara">Welcome by looking at my portfolio you have<br>
+                probably noticed that i'm a big fan of tech and development,<br>
+                but apart from that I'm also deeply interested in music and sound and light.<br>
+                I have way more interests, but I will leave those for you to know later on.</p>
+        </div>
+    </div>
+</section>
+<section id="skills">
+    <div id="sk-head">
+        <h2 class="translatable" data-key="skillhead">Skills</h2>
+        <div id="sk-line"></div>
+    </div>
+    <div class="cards">
+        <div>
+            <i class="fa-brands fa-html5 fa-4x" style="color: #f36518;"></i>
+            <h1>HTML</h1>
+            <p class="translatable" data-key="htmlSkill">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>
+                sed do eiusmod tempor.</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-css3-alt fa-4x" style="color: #2965f1;"></i>
+            <h1>CSS</h1>
+            <p class="translatable" data-key="cssSkill">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>
+                sed do eiusmod tempor.</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-square-js fa-4x" style="color: #f7e418;"></i>
+            <h1>JavaScript</h1>
+            <p class="translatable" data-key="jsSkill">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>
+                sed do eiusmod tempor.</p>
+        </div>
+    </div>
+    <div id="row2" class="cards">
+        <div>
+            <i class="fa-brands fa-figma fa-4x" style="color: #d33c3c;"></i>
+            <h1>Figma</h1>
+            <p class="translatable" data-key="figSkill">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>
+                sed do eiusmod tempor.</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-wordpress fa-4x" style="color: #21759b;"></i>
+            <h1>Wordpress</h1>
+            <p class="translatable" data-key="wpSkill">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>
+                sed do eiusmod tempor.</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-git-alt fa-4x" style="color: #f5702F;"></i>
+            <h1>GIT</h1>
+            <p class="translatable" data-key="gitSkill">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br>
+                sed do eiusmod tempor.</p>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <div id="p-header">
+        <h2 class="translatable" data-key="projectsHead">Projects</h2>
+        <div class="p-line"></div>
+    </div>
+    <div id="projectSlider">
+        <div id="carouselButtons">
+            <button class="btn-previous"><i class="fa-solid fa-chevron-left fa-2x" style="color: #ffffff;"></i></button>
+            <button class="btn-next"><i class="fa-solid fa-chevron-right fa-2x" style="color: #ffffff;"></i></button>
+        </div>
+        <div id="carousel">
+            <div class="carousel-container">
+                <img onclick="location.href='pages/unitedrp.html';" src="img/unitedrp.png" class="carouselImage">
+                <img onclick="location.href='pages/vijfluik.html';" src="img/vijfluik.png" class="carouselImage">
+                <img onclick="location.href='pages/webshop.html';" src="img/webshop.png" class="carouselImage">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div id="c-header">
+        <h2>Contact</h2>
+        <div class="c-line"></div>
+    </div>
+    <div>
+        <form id="contactForm" action="https://formsubmit.co/5a08c1979d68051cea73658a26efb6e9" method="post">
+            <input type="text" class="formDetails" id="name" name="name" PLACEHOLDER="Name..."><br>
+            <input type="text" class="formDetails" id="email" name="email" PLACEHOLDER="Email..."><br>
+            <input type="text" class="formDetails" id="companyName" name="companyName" PLACEHOLDER="Company Name... (Optional)"><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Message..."></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+<section id="footer">
+    <div id="copyright">
+        <h4>Copyright © Tim van Gestel 2023. All rights reserved.</h4>
+    </div>
+    <div id="socials">
+        <a href="https://github.com/Tim-V-G" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a>
+        <a href="https://www.linkedin.com/in/tim-van-gestel/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

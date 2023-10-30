@@ -272,7 +272,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 10%;
 }
 
 .p-line{
@@ -472,6 +472,9 @@ textarea {
     }
     #skills{
         height: 80vh;
+    }
+    #sk-head{
+        padding: 0;
     }
     .btn-next{
         z-index: 1000;

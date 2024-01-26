@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
@@ -21,26 +21,26 @@
             <li class="nav-item nav-menuItem"><a class="translatable" data-key="navContact" href="#contact">Contact</a></li>
         </div>
         <select id="language-selector">
-            <option value="en">EN</option>
-            <option value="nl">NL</option>
+            <option value="en" name="EN" aria-label="EN">EN</option>
+            <option value="nl" name="NL" aria-label="NL" >NL</option>
         </select>
     </div>
     <div id="introduction">
         <div id="in-text">
             <h1 class="welcome-msg translatable" data-key="welcomeMsg">Hello, <br>my name is <span class="in-name">Tim</span></h1>
             <div id="in-buttons">
-                <button class="btn-resume translatable" data-key="btnResume">Resume</button>
-                <a href="#contact"><button class="btn-contact translatable" data-key="btnContact">Contact</button></a>
+                <button class="btn-resume translatable" aria-label="resume button" data-key="btnResume">Resume</button>
+                <a href="#contact"><button class="btn-contact translatable" aria-label="contact button" data-key="btnContact">Contact</button></a>
             </div>
         </div>
         <div id="in-img">
-            <img src="img/me.png">
+            <img src="img/me.png" alt="a picture of me">
         </div>
     </div>
 </section>
 <section id="aboutMe">
     <div id="ab-img">
-        <img src="img/me2.png">
+        <img src="img/me2.png" alt="me behind the the dj decks">
     </div>
     <div id="ab-text">
         <div id="ab-inner">
@@ -107,14 +107,14 @@
     </div>
     <div id="projectSlider">
         <div id="carouselButtons">
-            <button class="btn-previous"><i class="fa-solid fa-chevron-left fa-2x" style="color: #ffffff;"></i></button>
-            <button class="btn-next"><i class="fa-solid fa-chevron-right fa-2x" style="color: #ffffff;"></i></button>
+            <button class="btn-previous" aria-label="previous carousel item button"><i class="fa-solid fa-chevron-left fa-2x" style="color: #ffffff;"></i></button>
+            <button class="btn-next" aria-label="next carousel item button"><i class="fa-solid fa-chevron-right fa-2x" style="color: #ffffff;"></i></button>
         </div>
         <div id="carousel">
             <div class="carousel-container">
-                <img onclick="location.href='pages/unitedrp.html';" src="img/unitedrp.png" class="carouselImage">
-                <img onclick="location.href='pages/vijfluik.html';" src="img/vijfluik.png" class="carouselImage">
-                <img onclick="location.href='pages/webshop.html';" src="img/webshop.png" class="carouselImage">
+                <img onclick="location.href='pages/unitedrp.html';" src="img/unitedrp.png" alt="image of a website i made for a roleplay server" class="carouselImage">
+                <img onclick="location.href='pages/vijfluik.html';" src="img/vijfluik.png" alt="image of a website that is devided in 5 sections" class="carouselImage">
+                <img onclick="location.href='pages/webshop.html';" src="img/webshop.png" alt="image of a webshop i build using javascript" class="carouselImage">
             </div>
         </div>
     </div>
@@ -130,17 +130,17 @@
             <input type="text" class="formDetails" id="email" name="email" PLACEHOLDER="Email..."><br>
             <input type="text" class="formDetails" id="companyName" name="companyName" PLACEHOLDER="Company Name... (Optional)"><br>
             <textarea id="message" name="message" rows="4" cols="50" placeholder="Message..."></textarea>
-            <input type="submit" value="Submit">
+            <input class="btn-submit" type="submit" value="Submit">
         </form>
     </div>
 </section>
 <section id="footer">
     <div id="copyright">
-        <h4>Copyright © Tim van Gestel 2023. All rights reserved.</h4>
+        <h3>Copyright © Tim van Gestel 2023. All rights reserved.</h3>
     </div>
     <div id="socials">
-        <a href="https://github.com/Tim-V-G" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a>
-        <a href="https://www.linkedin.com/in/tim-van-gestel/" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+        <a href="https://github.com/Tim-V-G" aria-label="Github" target="_blank"><i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a>
+        <a href="https://www.linkedin.com/in/tim-van-gestel/" aria-label="Linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
     </div>
 </section>
 <script src="script.js"></script>

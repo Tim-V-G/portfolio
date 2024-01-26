@@ -67,7 +67,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5% 5%;
+    padding: 23px 75px;
     position: fixed;
     top: 0;
     left: 0;
@@ -200,7 +200,7 @@ a{
     height: 4px;
     width: 100%;
     border-radius: 50px;
-    margin: 2% 0% 2% 0%;
+    margin: 10px 0px 10px 0px;
     background-color: #E75A2F;
 }
 
@@ -224,7 +224,7 @@ a{
     height: 4px;
     width: 10%;
     border-radius: 50px;
-    margin: 1% 0% 1% 0%;
+    margin: 10px 0px 10px 0px;
     background-color: #E75A2F;
 }
 
@@ -243,11 +243,11 @@ a{
 }
 
 #row2{
-    margin-top: 5%;
+    margin-top: 50px;
 }
 
 .cards div i, .cards div h1, .cards div p {
-    padding-top: 7%;
+    padding-top: 18px;
 }
 
 #projects{
@@ -279,7 +279,7 @@ a{
     height: 4px;
     width: 15%;
     border-radius: 50px;
-    margin: 1% 0% 1% 0%;
+    margin: 10px 0px 10px 0px;
     background-color: #E75A2F;
 }
 
@@ -348,14 +348,14 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 56px;
 }
 
 .c-line{
     height: 4px;
     width: 15%;
     border-radius: 50px;
-    margin: 1% 0% 1% 0%;
+    margin: 10px 0px 10px 0px;
     background-color: #E75A2F;
 }
 

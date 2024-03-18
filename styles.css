@@ -244,7 +244,6 @@ a{
     max-width: 1124px;
     margin: auto;
     color: #FFFFFF;
-    white-space: pre;
 }
 
 #sk-head{
@@ -264,9 +263,13 @@ a{
 }
 
 .cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 210px 45px 210px;
+  grid-template-areas: 
+    "card1 card2 card3"
+    ". . ."
+    "card4 card5 card6";
 }
 
 .cards > div{
@@ -277,13 +280,35 @@ a{
     text-align: center;
 }
 
-#row2{
-    margin-top: 50px;
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
+}
+
+.card5{
+    grid-area: card5;
+}
+
+.card6{
+    grid-area: card6;
 }
 
 .cards div i, .cards div h1, .cards div p {
     padding-top: 18px;
 }
+
+
 
 #projects{
     /*display: flex;*/
@@ -629,7 +654,15 @@ textarea {
         width: 35%;
     }
     .cards{
-        flex-direction: column;
+        grid-template-columns: 100%;
+        grid-template-rows: 210px;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6";
     }
     .cards div{
         padding: 20px 0 20px 0;

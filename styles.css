@@ -31,7 +31,7 @@ a{
     height: 4px;
     border-radius: 4px;
     background-color: #E75A2F;
-    bottom: 0;
+    top: 24px;
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
@@ -144,11 +144,26 @@ a{
 .welcome-msg{
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
 #in-img{
     display: flex;
     align-items: center;
     justify-content: end;
     width: 50%;
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
 }
 
 #in-img img{
@@ -518,10 +533,26 @@ textarea {
 }
 
 #projectVideo{
-    height: 50vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fa-github{
+    color: #FFFFFF;
+}
+
+.fa-linkedin{
+    color: #FFFFFF;
+}
+
+.fa-github:hover{
+    color: #e75a2f;
+}
+
+.fa-linkedin:hover{
+    color: #e75a2f;
 }
 
 @media screen and (max-width: 950px) {

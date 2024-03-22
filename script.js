@@ -49,6 +49,7 @@ let state = 0;
 function openNav(){
     if (state == 0) {
         document.getElementById('navmenu').style.display = "initial";
+        document.getElementById('header').classList.add("blur-phone");
         state = 1;
     } else {
         document.getElementById('navmenu').style.display = "none";

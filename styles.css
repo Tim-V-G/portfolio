@@ -92,7 +92,7 @@ a{
   }
 
 .blur-phone{
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) contrast(100%);
 }
 
 .nav-item{

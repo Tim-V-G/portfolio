@@ -91,6 +91,10 @@ a{
     }
   }
 
+.blur-phone{
+    backdrop-filter: blur(10px);
+}
+
 .nav-item{
     font-size: 1.2rem;
     list-style-type: none;
@@ -109,20 +113,11 @@ a{
     border-radius: 5px;
 }
 
-#language-selector.decorated option:hover{
-    background-color: red;
-    color: red;
-    outline: none;
-}
-
-.lang-option{
+.language-selectorProjects{
+    background-color: #E75A2F;
     padding: 5px;
-}
-
-.lang-option:focus{
-    background-color: red;
-    color: #1f2e41;
-    outline: none;
+    border: none;
+    border-radius: 5px;
 }
 
 #introduction{
@@ -495,7 +490,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     gap: 5%;
-    height: 150vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -534,7 +529,7 @@ textarea {
 }
 
 #projectVideo{
-    height: 30vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,6 +630,7 @@ textarea {
         display: flex;
         justify-content: center;
         height: 80%;
+        width: 100%;
     }
     #in-text{
         display: flex;

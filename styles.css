@@ -79,6 +79,7 @@ a{
     position: fixed;
     animation: slideDown 0.35s ease-out;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
   
   @keyframes slideDown {

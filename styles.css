@@ -606,7 +606,7 @@ textarea {
         flex-direction: column;
         align-items: center;
         backdrop-filter: blur(10px) contrast(100%);
-        -webkit-backdrop-filter: blur(10px) contrast(100%);
+        -webkit-backdrop-filter: blur(10px) contrast(1%);
         
     }
     .blur-phone{

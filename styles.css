@@ -355,22 +355,25 @@ a{
     background-color: #E75A2F;
 }
 
+#carousel img {
+    max-width: 100%;
+    height: auto; /* This will maintain the aspect ratio */
+    cursor: pointer;
+    display: block; /* Ensure the images are block-level elements */
+    margin: 0 auto; /* Center the images if needed */
+}
+
 #carousel {
     display: flex;
     justify-content: start;
     align-items: center;
     overflow: hidden;
-    width: 1000px;
-    height: 564px; /* Adjust the height as needed */
+    width: 100%; /* Use 100% to make it responsive */
+    max-width: 1000px; /* Adjust this if you want a max width */
+    height: auto; /* Adjust the height to be auto so it scales with the image */
     border-radius: 20px;
 }
 
-#carousel img {
-    max-width: 100%;
-    height: auto;
-    width: auto; /* Allow the image to adjust proportionally */
-    cursor: pointer;
-}
 
 
 .carousel-container{
@@ -397,7 +400,7 @@ a{
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 

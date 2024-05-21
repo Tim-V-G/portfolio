@@ -164,6 +164,7 @@ a{
 
 #in-img img{
     width: 80%;
+    border-radius: 50%;
     height: fit-content;
 }
 
@@ -577,6 +578,7 @@ textarea {
         width: 100%;
     }
     #in-img img{
+        border-radius: 50px;
         width: 300px;
         height: auto;
     }

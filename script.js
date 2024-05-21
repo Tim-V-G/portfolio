@@ -37,7 +37,7 @@ function translatePage(language) {
         .catch(error => console.error('Error loading translations', error));
 }
 
-translatePage('en');
+translatePage('nl');
 
 const languageSelector = document.getElementById('language-selector');
 languageSelector.addEventListener('change', function () {

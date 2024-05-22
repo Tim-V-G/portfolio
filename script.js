@@ -1,3 +1,5 @@
+// Code for the carousel
+
 const carousel = document.querySelector("#carousel");
 const container = document.querySelector(".carousel-container");
 const images = document.querySelectorAll(".carouselImage");
@@ -20,8 +22,11 @@ nextButton.addEventListener("click", () => {
     showImage(currentIndex);
 });
 
-// Initial display
 showImage(currentIndex);
+
+
+
+// Translation with json
 
 function translatePage(language) {
     fetch('lang.json')
@@ -45,6 +50,10 @@ languageSelector.addEventListener('change', function () {
     translatePage(selectedLanguage);
 });
 
+
+
+// (Hamburger)Menu op mobiel
+
 let state = 0;
 function openNav(){
     if (state == 0) {
@@ -56,6 +65,8 @@ function openNav(){
         state = 0;
     }
 }
+
+
 
 // sticky navigation
 

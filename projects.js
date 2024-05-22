@@ -1,3 +1,5 @@
+// Translation for project pages
+
 function translatePage(language) {
     fetch('../lang.json')
         .then(response => response.json())
@@ -12,7 +14,7 @@ function translatePage(language) {
         .catch(error => console.error('Error loading translations', error));
 }
 
-translatePage('en');
+translatePage('nl');
 
 const languageSelectorProjects = document.querySelector('.language-selectorProjects');
 languageSelectorProjects.addEventListener('change', function () {

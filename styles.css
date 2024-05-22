@@ -186,6 +186,11 @@ a{
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-resume:hover{
+    scale: 1.05;
 }
 
 .btn-contact{
@@ -198,6 +203,11 @@ a{
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-contact:hover{
+    scale: 1.05;
 }
 
 .welcome-msg{
@@ -581,7 +591,6 @@ textarea {
         width: 100%;
     }
     #in-img img{
-        border-radius: 50px;
         width: 300px;
         height: auto;
     }

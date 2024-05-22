@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+
+:root {
+    --primary-color: #1f2e41;
+    --accent-color: #E75A2F;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +17,8 @@ html{
 }
 
 body{
-    background-color: #1f2e41;
+    
+    background-color: var(--primary-color);
 }
 
 
@@ -30,7 +37,7 @@ a{
     width: 100%;
     height: 4px;
     border-radius: 4px;
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
     top: 24px;
     left: 0;
     transform-origin: right;
@@ -106,15 +113,19 @@ a{
     display: none;
 }
 
+.icons-color{
+    color: var(--accent-color);
+}
+
 #language-selector{
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
     padding: 5px;
     border: none;
     border-radius: 5px;
 }
 
 .language-selectorProjects{
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
     padding: 5px;
     border: none;
     border-radius: 5px;
@@ -125,7 +136,7 @@ a{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1f2e41;
+    background-color: var(--primary-color);
 }
 
 #in-text{
@@ -179,10 +190,10 @@ a{
 .btn-resume{
     border: none;
     padding: 1rem 2.5rem;
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
     text-decoration: none;
     border-radius: 50px;
-    color: #1f2e41;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
@@ -195,7 +206,7 @@ a{
 
 .btn-contact{
     padding: 1rem 2.5rem;
-    border: 3px solid #E75A2F;
+    border: 3px solid var(--accent-color);
     background-color: transparent;
     text-decoration: none;
     border-radius: 50px;
@@ -258,7 +269,7 @@ a{
     width: 100%;
     border-radius: 50px;
     margin: 10px 0px 10px 0px;
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
 }
 
 #skills{
@@ -281,7 +292,7 @@ a{
     width: 10%;
     border-radius: 50px;
     margin: 10px 0px 10px 0px;
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
 }
 
 .cards{
@@ -362,7 +373,7 @@ a{
     width: 15%;
     border-radius: 50px;
     margin: 10px 0px 10px 0px;
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
 }
 
 #carousel img {
@@ -441,7 +452,7 @@ a{
     width: 15%;
     border-radius: 50px;
     margin: 10px 0px 10px 0px;
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
 }
 
 #contactForm{
@@ -472,10 +483,10 @@ textarea {
 .btn-submit{
     border: none;
     padding: 1rem 2.5rem;
-    background-color: #E75A2F;
+    background-color: var(--accent-color);
     text-decoration: none;
     border-radius: 50px;
-    color: #1f2e41;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1rem;
     margin: 20px;
@@ -530,7 +541,7 @@ textarea {
 #projectText a {
     font-weight: bold;
     text-decoration: underline;
-    color: #e75a2f;
+    color: var(--accent-color);
 }
 
 #projectPhoto img{
@@ -558,11 +569,11 @@ textarea {
 }
 
 .fa-github:hover{
-    color: #e75a2f;
+    color: var(--accent-color);
 }
 
 .fa-linkedin:hover{
-    color: #e75a2f;
+    color: var(--accent-color);
 }
 
 @media screen and (max-width: 950px) {

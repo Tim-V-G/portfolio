@@ -632,6 +632,18 @@ textarea {
     position: relative;
     border-radius: 5px;
   }
+
+  #acceptCookie:hover{
+    background-color: var(--secondary-accent-color);
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  #refuseCookies:hover{
+    background-color: var(--accent-color);
+    color: #fff;
+    transition: 0.5s;
+  }
   #cookiePopup a {
     color: var(--accent-color);
   }
